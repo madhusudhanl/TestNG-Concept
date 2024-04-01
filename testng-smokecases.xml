@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="SmokeCases">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="practise.ClassOne" />
+			<class name="practise.ClassTwo" />
+			<class name="practise.ClassThree" />
+		</classes>
+	</test> <!--Test -->
+	
+	
+	<test name="AdditionalTest">
+		<parameter name="URL" value="testing4.com"></parameter>
+		<parameter name="URL2" value="testing42.com"></parameter>
+		
+		<classes>
+			<class name="practise.ClassFour"></class>
+		</classes>
+
+
+	</test>
+</suite> <!--Suite -->
